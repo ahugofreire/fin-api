@@ -1,0 +1,26 @@
+GET http://localhost:3000/transactions
+
+###
+POST http://localhost:3000/transactions
+Content-Type: application/json
+
+{
+  "payment_date": "2023-09-26",
+  "name": "Conta de luz",
+  "description": "conta de luz de setembro",
+  "category": "category1",
+  "amount": 101.98,
+  "type": "debit"
+}
+
+###
+POST http://localhost:3000/accounts
+Content-Type: application/json
+
+{
+  "name": "conta_azul",
+  "subdomain": "cazul"
+}
+
+###
+GET http://localhost:3000/accounts
